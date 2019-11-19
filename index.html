@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Solid: taking back the Web through decentralization</title>
+  <title>The Decentralized Web and its challenges for querying</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -10,25 +10,19 @@
 </head>
 <body class="shower list">
   <header class="caption">
-    <h1>Solid: taking back the Web through decentralization</h1>
+    <h1>The Decentralized Web and its challenges for querying</h1>
     <p>
       <a href="https://ruben.verborgh.org/">Ruben Verborgh</a>,
       <a href="http://www.ugent.be/">Ghent University</a> –
       <a href="http://www.imec.be/">imec</a>
     </p>
     <p class="venue">
-      <a href="https://fosdem.org/2019/">FOSDEM ’19</a>, 3 February 2019
-    </p>
-    <p>
-      Watch <a href="https://video.fosdem.org/2019/Janson/solid_web_decentralization.mp4">the recording of this presentation</a>.
-    </p>
-    <p>
-      Also read <a href="https://fosdem.org/2019/interviews/ruben-verborgh/">my FOSDEM interview</a> on Solid.
+      <a href="https://www.en.aau.dk/">Aalborg University</a>, 20 November 2019
     </p>
   </header>
 
   <div class="title slide" id="title">
-    <h2>Solid: taking back the Web through decentralization</h2>
+    <h2>The Decentralized Web and its challenges for querying</h2>
     <p class="author">Ruben Verborgh</p>
     <p class="affiliation">Ghent University – imec</p>
   </div>
@@ -885,11 +879,11 @@
     </h2>
     <pre><code>{
   <span class="prefix">"@context":  "https://www.w3.org/ns/activitystreams",</span>
-  "id":        "#ruben-likes-fosdem2019",
+  "id":        "#ruben-likes-aau",
   "type":      "Like",
   "actor":     "<mark>https://ruben.verborgh.org/profile/#me</mark>",
-  "object":    "<mark>https://fosdem.org/2019/#this</mark>",
-  "published": "2019-02-03T09:00:00Z"
+  "object":    "<mark>http://dbpedia.org/resource/Aalborg_University</mark>",
+  "published": "2019-11-20T09:00:00Z"
 }</code></pre>
   </div>
 
@@ -900,11 +894,11 @@
     </h2>
     <pre><code>{
   <span class="prefix">"@context":  "https://www.w3.org/ns/activitystreams",</span>
-  "id":        "#ruben-likes-fosdem2019",
+  "id":        "#ruben-likes-aau",
   "<mark>type</mark>":      "<mark>Like</mark>",
   "<mark>actor</mark>":     "https://ruben.verborgh.org/profile/#me",
-  "<mark>object</mark>":    "https://fosdem.org/2019/#this",
-  "<mark>published</mark>": "2019-02-03T09:00:00Z"
+  "<mark>object</mark>":    "http://dbpedia.org/resource/Aalborg_University",
+  "<mark>published</mark>": "2019-11-20T09:00:00Z"
 }</code></pre>
   </div>
 
@@ -917,14 +911,14 @@
   <span class="prefix">"@context":  "https://www.w3.org/ns/activitystreams",</span>
   <span class="prefix">"@graph":</span> [{
     "type":      "Like",
-    "actor":     <mark>"https://ruben.verborgh.org/profile/#me"</mark>,
-    "object":    "https://fosdem.org/2019/#this",
-    "published": "2019-02-03T09:00:00Z"
+    "actor":     "<mark>https://ruben.verborgh.org/profile/#me</mark>",
+    "object":    "http://dbpedia.org/resource/Aalborg_University",
+    "published": "2019-11-20T09:00:00Z"
   },{
     "type":      "Like",
-    "actor":     <mark>"https://example.org/people/silvia#me"</mark>,
-    "object":    "https://fosdem.org/2019/#this",
-    "published": "2019-02-03T09:05:00Z"
+    "actor":     "<mark>https://example.org/people/katja#me</mark>",
+    "object":    "http://dbpedia.org/resource/Aalborg_University",
+    "published": "2019-11-20T09:05:00Z"
   }]
 }</code></pre>
   </div>
@@ -1177,12 +1171,12 @@
   </div>
 
   <div class="title slide" id="end">
-    <h2>Solid: taking back the Web through decentralization</h2>
+    <h2>The Decentralized Web and its challenges for querying</h2>
     <p class="author"><a href="https://twitter.com/RubenVerborgh">@RubenVerborgh</a></p>
   </div>
 
   <footer>
-    <p class="badge"><a href="https://github.com/RubenVerborgh/Slides-FOSDEM-2019/">View on GitHub</a></p>
+    <p class="badge"><a href="https://github.com/RubenVerborgh/Decentralized-Web-Query-Challenges-2019">View on GitHub</a></p>
     <p class="license">
       ©2019 <a href="https://ruben.verborgh.org/">Ruben Verborgh</a> –
       Except where otherwise noted,
